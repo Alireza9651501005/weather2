@@ -8,14 +8,14 @@ const App = () => {
   const [weather, setWeather] = useState({});
 
   const search = async () => {
-      const data = await fetchWeather(query);
-      setWeather(data);
-      setQuery("");
+    const data = await fetchWeather(query);
+    setWeather(data);
+    setQuery("");
   };
 
   return (
     <div className="main-container">
-      <div className='main22'>
+      <div className="main22">
         <input
           type="text"
           className="search"
@@ -45,6 +45,9 @@ const App = () => {
           </div>
         </div>
       )}
+      <a href="https://github.com/Alireza9651501005" target='_blank' rel="noreferrer">
+        <i class="fab fa-github"></i>
+      </a>
     </div>
   );
 };
